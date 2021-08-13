@@ -1,0 +1,11 @@
+#lang scheme
+
+; Ex 2.xx
+
+; Definition of a rational number as a pair of numbers
+(define (make-rat n d) (cons n d))
+
+; Definition of the numerator of a rational number as the first element(car)
+; of the pair, and the denominator as the second element (cdr) of the pair
+(define (numer x) (car x))
+(define (denom x) (cdr x))
